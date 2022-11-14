@@ -11,8 +11,9 @@ public class Commercant extends Humain {
 		return argent=0;
 	}
 	
-	public void recevoir(int argent) {
-		parler(argent+" sous ! Je te remercie généreux donateur!");
+	public void recevoir(int arg) {
+		parler(arg+" sous ! Je te remercie généreux donateur!");
+		argent+=arg;
 	}
 	
 	public static void main(String[] args) {
